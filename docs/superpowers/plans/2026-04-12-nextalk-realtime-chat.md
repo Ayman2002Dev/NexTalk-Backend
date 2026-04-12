@@ -869,7 +869,7 @@ git commit -m "feat: add token generation utilities with tests"
 
 - Create: `src/config/db.js`
 
-- [ ] **Step 1: Write test for database connection**
+- [x] **Step 1: Write test for database connection**
 
 Create `tests/config/db.test.js`:
 
@@ -896,7 +896,7 @@ describe("Database Connection", () => {
 });
 ```
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 ```bash
 npm test -- tests/config/db.test.js
@@ -904,7 +904,7 @@ npm test -- tests/config/db.test.js
 
 Expected: FAIL (file doesn't exist)
 
-- [ ] **Step 3: Create database connection module**
+- [x] **Step 3: Create database connection module**
 
 Create `src/config/db.js`:
 
@@ -924,7 +924,7 @@ const connectDB = async () => {
 module.exports = connectDB;
 ```
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 ```bash
 npm test -- tests/config/db.test.js
@@ -932,7 +932,7 @@ npm test -- tests/config/db.test.js
 
 Expected: PASS
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add src/config/ tests/config/

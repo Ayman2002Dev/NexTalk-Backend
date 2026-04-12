@@ -1931,7 +1931,7 @@ git commit -m "feat: add server entry point with integration test"
 
 - Modify: `package.json`
 
-- [ ] **Step 1: Add Jest test script to package.json**
+- [x] **Step 1: Add Jest test script to package.json**
 
 Read current `package.json` and add:
 
@@ -1952,13 +1952,13 @@ And update scripts:
 }
 ```
 
-- [ ] **Step 2: Install Jest**
+- [x] **Step 2: Install Jest**
 
 ```bash
 npm install --save-dev jest supertest
 ```
 
-- [ ] **Step 3: Run all tests**
+- [x] **Step 3: Run all tests**
 
 ```bash
 npm test

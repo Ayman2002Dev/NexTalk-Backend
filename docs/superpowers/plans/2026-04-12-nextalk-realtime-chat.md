@@ -1247,7 +1247,7 @@ git commit -m "feat: add auth and message services with tests"
 - Create: `src/controllers/auth.controller.js`
 - Create: `src/controllers/message.controller.js`
 
-- [ ] **Step 1: Write test for auth controller**
+- [x] **Step 1: Write test for auth controller**
 
 Create `tests/controllers/auth.controller.test.js`:
 
@@ -1318,7 +1318,7 @@ describe("Auth Controller", () => {
 });
 ```
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 ```bash
 npm test -- tests/controllers/auth.controller.test.js
@@ -1326,7 +1326,7 @@ npm test -- tests/controllers/auth.controller.test.js
 
 Expected: FAIL
 
-- [ ] **Step 3: Create auth controller**
+- [x] **Step 3: Create auth controller**
 
 Create `src/controllers/auth.controller.js`:
 
@@ -1365,7 +1365,7 @@ exports.logout = async (req, res) => {
 };
 ```
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 ```bash
 npm test -- tests/controllers/auth.controller.test.js
@@ -1373,7 +1373,7 @@ npm test -- tests/controllers/auth.controller.test.js
 
 Expected: PASS
 
-- [ ] **Step 5: Write test for message controller**
+- [x] **Step 5: Write test for message controller**
 
 Create `tests/controllers/message.controller.test.js`:
 
@@ -1425,7 +1425,7 @@ describe("Message Controller", () => {
 });
 ```
 
-- [ ] **Step 6: Run test to verify it fails**
+- [x] **Step 6: Run test to verify it fails**
 
 ```bash
 npm test -- tests/controllers/message.controller.test.js
@@ -1433,7 +1433,7 @@ npm test -- tests/controllers/message.controller.test.js
 
 Expected: FAIL
 
-- [ ] **Step 7: Create message controller**
+- [x] **Step 7: Create message controller**
 
 Create `src/controllers/message.controller.js`:
 
@@ -1475,7 +1475,7 @@ exports.markRead = async (req, res) => {
 };
 ```
 
-- [ ] **Step 8: Run test to verify it passes**
+- [x] **Step 8: Run test to verify it passes**
 
 ```bash
 npm test -- tests/controllers/message.controller.test.js
@@ -1483,7 +1483,7 @@ npm test -- tests/controllers/message.controller.test.js
 
 Expected: PASS
 
-- [ ] **Step 9: Commit**
+- [x] **Step 9: Commit**
 
 ```bash
 git add src/controllers/ tests/controllers/

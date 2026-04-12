@@ -776,7 +776,7 @@ git commit -m "feat: add auth and validate middleware with tests"
 
 - Create: `src/utils/token.utils.js`
 
-- [ ] **Step 1: Write test for token utils**
+- [x] **Step 1: Write test for token utils**
 
 Create `tests/utils/token.utils.test.js`:
 
@@ -824,7 +824,7 @@ describe("Token Utils", () => {
 });
 ```
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 ```bash
 npm test -- tests/utils/token.utils.test.js
@@ -832,7 +832,7 @@ npm test -- tests/utils/token.utils.test.js
 
 Expected: FAIL
 
-- [ ] **Step 3: Create token utils**
+- [x] **Step 3: Create token utils**
 
 Create `src/utils/token.utils.js`:
 
@@ -846,7 +846,7 @@ exports.generateRefreshToken = (payload) =>
   jwt.sign(payload, process.env.SECRET_KEY);
 ```
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 ```bash
 npm test -- tests/utils/token.utils.test.js
@@ -854,7 +854,7 @@ npm test -- tests/utils/token.utils.test.js
 
 Expected: PASS
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add src/utils/ tests/utils/

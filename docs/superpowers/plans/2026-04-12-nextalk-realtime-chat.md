@@ -1671,7 +1671,7 @@ git commit -m "feat: add auth and message routes with tests"
 
 - Create: `src/socket/socket.handler.js`
 
-- [ ] **Step 1: Write test for socket handler setup**
+- [x] **Step 1: Write test for socket handler setup**
 
 Create `tests/socket/socket.handler.test.js`:
 
@@ -1701,7 +1701,7 @@ describe("Socket Handler", () => {
 });
 ```
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 ```bash
 npm test -- tests/socket/socket.handler.test.js
@@ -1709,7 +1709,7 @@ npm test -- tests/socket/socket.handler.test.js
 
 Expected: FAIL
 
-- [ ] **Step 3: Create socket handler**
+- [x] **Step 3: Create socket handler**
 
 Create `src/socket/socket.handler.js`:
 
@@ -1798,7 +1798,7 @@ exports.initSocket = (io) => {
 };
 ```
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 ```bash
 npm test -- tests/socket/socket.handler.test.js

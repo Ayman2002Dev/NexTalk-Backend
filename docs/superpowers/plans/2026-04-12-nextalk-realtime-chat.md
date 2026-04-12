@@ -239,7 +239,7 @@ const userSchema = new mongoose.Schema({
 module.exports = mongoose.model("User", userSchema);
 ```
 
-- [x] **Step 4: Run test to verify it passes**
+- [ ] **Step 4: Run test to verify it passes**
 
 ```bash
 npm test -- tests/models/user.model.test.js
@@ -296,7 +296,7 @@ describe("Message Model", () => {
 });
 ```
 
-- [x] **Step 6: Run test to verify it fails**
+- [ ] **Step 6: Run test to verify it fails**
 
 ```bash
 npm test -- tests/models/message.model.test.js
@@ -304,7 +304,7 @@ npm test -- tests/models/message.model.test.js
 
 Expected: FAIL
 
-- [x] **Step 7: Create Message model**
+- [ ] **Step 7: Create Message model**
 
 Create `src/models/message.model.js`:
 
@@ -364,7 +364,7 @@ git commit -m "feat: add User and Message models with tests"
 - Create: `src/schemas/auth.schema.js`
 - Create: `src/schemas/message.schema.js`
 
-- [ ] **Step 1: Write test for auth schema validation**
+- [x] **Step 1: Write test for auth schema validation**
 
 Create `tests/schemas/auth.schema.test.js`:
 
@@ -457,7 +457,7 @@ describe("Auth Schema Validation", () => {
 });
 ```
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 ```bash
 npm test -- tests/schemas/auth.schema.test.js
@@ -465,7 +465,7 @@ npm test -- tests/schemas/auth.schema.test.js
 
 Expected: FAIL
 
-- [ ] **Step 3: Create auth schema**
+- [x] **Step 3: Create auth schema**
 
 Create `src/schemas/auth.schema.js`:
 
@@ -505,7 +505,7 @@ exports.loginSchema = z.object({
 });
 ```
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 ```bash
 npm test -- tests/schemas/auth.schema.test.js
@@ -513,7 +513,7 @@ npm test -- tests/schemas/auth.schema.test.js
 
 Expected: PASS (all 8 tests)
 
-- [ ] **Step 5: Write test for message schema**
+- [x] **Step 5: Write test for message schema**
 
 Create `tests/schemas/message.schema.test.js`:
 
@@ -549,7 +549,7 @@ describe("Message Schema Validation", () => {
 });
 ```
 
-- [ ] **Step 6: Run test to verify it fails**
+- [x] **Step 6: Run test to verify it fails**
 
 ```bash
 npm test -- tests/schemas/message.schema.test.js
@@ -557,7 +557,7 @@ npm test -- tests/schemas/message.schema.test.js
 
 Expected: FAIL
 
-- [ ] **Step 7: Create message schema**
+- [x] **Step 7: Create message schema**
 
 Create `src/schemas/message.schema.js`:
 
@@ -570,7 +570,7 @@ exports.sendMessageSchema = z.object({
 });
 ```
 
-- [ ] **Step 8: Run test to verify it passes**
+- [x] **Step 8: Run test to verify it passes**
 
 ```bash
 npm test -- tests/schemas/message.schema.test.js
@@ -578,7 +578,7 @@ npm test -- tests/schemas/message.schema.test.js
 
 Expected: PASS
 
-- [ ] **Step 9: Commit**
+- [x] **Step 9: Commit**
 
 ```bash
 git add src/schemas/ tests/schemas/
@@ -1526,14 +1526,12 @@ describe("Auth Routes", () => {
   });
 
   test("POST /auth/register should return 400 with invalid data", async () => {
-    const res = await request(app)
-      .post("/auth/register")
-      .send({
-        fullName: "",
-        username: "ab",
-        email: "invalid",
-        password: "123",
-      });
+    const res = await request(app).post("/auth/register").send({
+      fullName: "",
+      username: "ab",
+      email: "invalid",
+      password: "123",
+    });
 
     expect(res.status).toBe(400);
   });

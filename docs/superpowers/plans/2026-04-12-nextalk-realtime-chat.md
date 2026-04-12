@@ -594,7 +594,7 @@ git commit -m "feat: add Zod validation schemas with tests"
 - Create: `src/middleware/auth.middleware.js`
 - Create: `src/middleware/validate.middleware.js`
 
-- [ ] **Step 1: Write test for validate middleware**
+- [x] **Step 1: Write test for validate middleware**
 
 Create `tests/middleware/validate.middleware.test.js`:
 
@@ -634,7 +634,7 @@ describe("Validate Middleware", () => {
 });
 ```
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 ```bash
 npm test -- tests/middleware/validate.middleware.test.js
@@ -642,7 +642,7 @@ npm test -- tests/middleware/validate.middleware.test.js
 
 Expected: FAIL
 
-- [ ] **Step 3: Create validate middleware**
+- [x] **Step 3: Create validate middleware**
 
 Create `src/middleware/validate.middleware.js`:
 
@@ -661,7 +661,7 @@ const validate = (schema) => (req, res, next) => {
 module.exports = validate;
 ```
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 ```bash
 npm test -- tests/middleware/validate.middleware.test.js
@@ -669,7 +669,7 @@ npm test -- tests/middleware/validate.middleware.test.js
 
 Expected: PASS
 
-- [ ] **Step 5: Write test for auth middleware**
+- [x] **Step 5: Write test for auth middleware**
 
 Create `tests/middleware/auth.middleware.test.js`:
 
@@ -719,7 +719,7 @@ describe("Auth Middleware", () => {
 });
 ```
 
-- [ ] **Step 6: Run test to verify it fails**
+- [x] **Step 6: Run test to verify it fails**
 
 ```bash
 npm test -- tests/middleware/auth.middleware.test.js
@@ -727,7 +727,7 @@ npm test -- tests/middleware/auth.middleware.test.js
 
 Expected: FAIL
 
-- [ ] **Step 7: Create auth middleware**
+- [x] **Step 7: Create auth middleware**
 
 Create `src/middleware/auth.middleware.js`:
 
@@ -753,7 +753,7 @@ const protect = (req, res, next) => {
 module.exports = protect;
 ```
 
-- [ ] **Step 8: Run test to verify it passes**
+- [x] **Step 8: Run test to verify it passes**
 
 ```bash
 npm test -- tests/middleware/auth.middleware.test.js
@@ -761,7 +761,7 @@ npm test -- tests/middleware/auth.middleware.test.js
 
 Expected: PASS
 
-- [ ] **Step 9: Commit**
+- [x] **Step 9: Commit**
 
 ```bash
 git add src/middleware/ tests/middleware/

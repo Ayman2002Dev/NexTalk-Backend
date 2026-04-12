@@ -1916,7 +1916,7 @@ npm test -- tests/integration/server.test.js
 
 Expected: PASS
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add server.js tests/integration/

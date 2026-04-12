@@ -1979,7 +1979,7 @@ git commit -m "chore: add Jest test configuration and supertest"
 
 **Files:** N/A
 
-- [ ] **Step 1: Start MongoDB**
+- [x] **Step 1: Start MongoDB**
 
 ```bash
 # Windows - check if MongoDB is running
@@ -1987,7 +1987,7 @@ net start MongoDB
 # Or use MongoDB Atlas URI in .env
 ```
 
-- [ ] **Step 2: Run development server**
+- [x] **Step 2: Run development server**
 
 ```bash
 npm run dev
@@ -2000,7 +2000,7 @@ NexTalk running on port 5000
 MongoDB connected
 ```
 
-- [ ] **Step 3: Test registration endpoint**
+- [x] **Step 3: Test registration endpoint**
 
 ```bash
 curl -X POST http://localhost:5000/auth/register \
@@ -2010,7 +2010,7 @@ curl -X POST http://localhost:5000/auth/register \
 
 Expected: `201` response with user object
 
-- [ ] **Step 4: Commit final changes**
+- [x] **Step 4: Commit final changes**
 
 ```bash
 git add .

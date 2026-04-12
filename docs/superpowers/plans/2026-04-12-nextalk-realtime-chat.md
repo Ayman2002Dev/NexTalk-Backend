@@ -1821,7 +1821,7 @@ git commit -m "feat: add Socket.io handler with tests"
 
 - Create: `server.js`
 
-- [ ] **Step 1: Write integration test for server**
+- [x] **Step 1: Write integration test for server**
 
 Create `tests/integration/server.test.js`:
 
@@ -1855,7 +1855,7 @@ describe("Server Integration", () => {
 });
 ```
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 ```bash
 npm test -- tests/integration/server.test.js
@@ -1863,7 +1863,7 @@ npm test -- tests/integration/server.test.js
 
 Expected: FAIL (server.js doesn't export app)
 
-- [ ] **Step 3: Create server.js entry point**
+- [x] **Step 3: Create server.js entry point**
 
 Create `server.js`:
 
@@ -1908,7 +1908,7 @@ server.listen(process.env.PORT, () => {
 });
 ```
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 ```bash
 npm test -- tests/integration/server.test.js

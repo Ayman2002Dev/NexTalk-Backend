@@ -948,7 +948,7 @@ git commit -m "feat: add MongoDB connection module with test"
 - Create: `src/services/auth.service.js`
 - Create: `src/services/message.service.js`
 
-- [ ] **Step 1: Write test for auth service register**
+- [x] **Step 1: Write test for auth service register**
 
 Create `tests/services/auth.service.test.js`:
 
@@ -1035,7 +1035,7 @@ describe("Auth Service", () => {
 });
 ```
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 ```bash
 npm test -- tests/services/auth.service.test.js
@@ -1043,7 +1043,7 @@ npm test -- tests/services/auth.service.test.js
 
 Expected: FAIL
 
-- [ ] **Step 3: Create auth service**
+- [x] **Step 3: Create auth service**
 
 Create `src/services/auth.service.js`:
 
@@ -1100,7 +1100,7 @@ exports.loginUser = async ({ email, password }) => {
 };
 ```
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 ```bash
 npm test -- tests/services/auth.service.test.js
@@ -1108,7 +1108,7 @@ npm test -- tests/services/auth.service.test.js
 
 Expected: PASS
 
-- [ ] **Step 5: Write test for message service**
+- [x] **Step 5: Write test for message service**
 
 Create `tests/services/message.service.test.js`:
 
@@ -1185,7 +1185,7 @@ describe("Message Service", () => {
 });
 ```
 
-- [ ] **Step 6: Run test to verify it fails**
+- [x] **Step 6: Run test to verify it fails**
 
 ```bash
 npm test -- tests/services/message.service.test.js
@@ -1193,7 +1193,7 @@ npm test -- tests/services/message.service.test.js
 
 Expected: FAIL
 
-- [ ] **Step 7: Create message service**
+- [x] **Step 7: Create message service**
 
 Create `src/services/message.service.js`:
 
@@ -1223,7 +1223,7 @@ exports.markAsRead = async (senderId, receiverId) => {
 };
 ```
 
-- [ ] **Step 8: Run test to verify it passes**
+- [x] **Step 8: Run test to verify it passes**
 
 ```bash
 npm test -- tests/services/message.service.test.js
@@ -1231,7 +1231,7 @@ npm test -- tests/services/message.service.test.js
 
 Expected: PASS
 
-- [ ] **Step 9: Commit**
+- [x] **Step 9: Commit**
 
 ```bash
 git add src/services/ tests/services/

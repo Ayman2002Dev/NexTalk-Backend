@@ -1806,7 +1806,7 @@ npm test -- tests/socket/socket.handler.test.js
 
 Expected: PASS
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add src/socket/ tests/socket/

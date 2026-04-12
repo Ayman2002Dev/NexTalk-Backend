@@ -1499,7 +1499,7 @@ git commit -m "feat: add auth and message controllers with tests"
 - Create: `src/routes/auth.routes.js`
 - Create: `src/routes/message.routes.js`
 
-- [ ] **Step 1: Write test for auth routes**
+- [x] **Step 1: Write test for auth routes**
 
 Create `tests/routes/auth.routes.test.js`:
 
@@ -1546,7 +1546,7 @@ describe("Auth Routes", () => {
 });
 ```
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 ```bash
 npm test -- tests/routes/auth.routes.test.js
@@ -1554,7 +1554,7 @@ npm test -- tests/routes/auth.routes.test.js
 
 Expected: FAIL
 
-- [ ] **Step 3: Create auth routes**
+- [x] **Step 3: Create auth routes**
 
 Create `src/routes/auth.routes.js`:
 
@@ -1572,7 +1572,7 @@ router.post("/logout", protect, logout);
 module.exports = router;
 ```
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 ```bash
 npm test -- tests/routes/auth.routes.test.js
@@ -1580,7 +1580,7 @@ npm test -- tests/routes/auth.routes.test.js
 
 Expected: PASS
 
-- [ ] **Step 5: Write test for message routes**
+- [x] **Step 5: Write test for message routes**
 
 Create `tests/routes/message.routes.test.js`:
 
@@ -1616,7 +1616,7 @@ describe("Message Routes", () => {
 });
 ```
 
-- [ ] **Step 6: Run test to verify it fails**
+- [x] **Step 6: Run test to verify it fails**
 
 ```bash
 npm test -- tests/routes/message.routes.test.js
@@ -1624,7 +1624,7 @@ npm test -- tests/routes/message.routes.test.js
 
 Expected: FAIL
 
-- [ ] **Step 7: Create message routes**
+- [x] **Step 7: Create message routes**
 
 Create `src/routes/message.routes.js`:
 
@@ -1648,7 +1648,7 @@ router.patch("/read/:senderId", markRead);
 module.exports = router;
 ```
 
-- [ ] **Step 8: Run test to verify it passes**
+- [x] **Step 8: Run test to verify it passes**
 
 ```bash
 npm test -- tests/routes/message.routes.test.js
@@ -1656,7 +1656,7 @@ npm test -- tests/routes/message.routes.test.js
 
 Expected: PASS
 
-- [ ] **Step 9: Commit**
+- [x] **Step 9: Commit**
 
 ```bash
 git add src/routes/ tests/routes/
